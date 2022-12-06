@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-1" routerLink="movies"  class="tab-switch">
+      <label for="tab-1" class="tab-label">Movies</label></div>
+      <div class="content">
+      <router-outlet></router-outlet> 
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" routerLink="shows" checked class="tab-switch">
+      <label for="tab-2" class="tab-label">Shows</label></div>
+      <div class="content"><router-outlet></router-outlet> </div>
+</div>
+</div>

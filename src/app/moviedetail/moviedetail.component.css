@@ -1,0 +1,26 @@
+p{
+color: white;
+font-size: large;
+}
+h1{
+    color: white;
+    font-size: xx-large;
+}
+
+button{
+    background-color: rgb(12,16,15);
+    color:  rgb(170,33,30);
+    border: 1px solid  rgb(170,33,30);
+    padding: 10px;
+    width: 100px;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color:  rgb(170,33,30);
+    color: white;
+}
+
+.image{
+    background-image: cover;
+}

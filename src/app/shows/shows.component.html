@@ -1,0 +1,12 @@
+
+<div><div class="search">
+    <input class="form-control"  type="text" [(ngModel)]="searchInput" placeholder="Search for shows" size="50" >
+    </div>
+<div class="wrapper" *ngFor="let show of shows | search: searchInput ">
+    <div class="card">
+    <img src="https://image.tmdb.org/t/p/w185/{{show?.poster_path}}" alt="Avatar" style="width:500px; height:500px">
+    <div class="container">
+      <h2><b><a [routerLink]="[show.id]">{{show.original_name}}</a></b></h2>
+    </div>
+  </div>
+</div>

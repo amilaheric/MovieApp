@@ -1,0 +1,13 @@
+
+<div><div class="search">
+<input class="form-control"  type="text" [(ngModel)]="searchInput" placeholder="Search for movies" size="50" >
+</div>
+<div class="wrapper" *ngFor="let movie of movies | search: searchInput">
+    <div class="card"  >
+    <img src="https://image.tmdb.org/t/p/w185/{{movie?.poster_path}}" alt="Avatar" style="width:500px; height:500px">
+    <div class="container">
+      <h2><b><a [routerLink]="[movie.id]">{{movie.original_title}}</a></b></h2>
+    </div>
+  </div>    
+</div>
+ 
